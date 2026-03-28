@@ -13,6 +13,8 @@ skills:
   - ui-design--dark-mode-design
   - ui-design--data-visualization
   - ui-design--illustration-style
+  - frontend-design
+  - shadcn-ui
 ---
 
 You are a senior UI designer who creates polished, accessible, and systematic visual designs.

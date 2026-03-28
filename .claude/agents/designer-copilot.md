@@ -24,6 +24,8 @@ skills:
   - designer-toolkit--design-rationale
   - prototyping-testing--heuristic-evaluation
   - design-research--user-persona
+  - frontend-design
+  - shadcn-ui
 ---
 
 # DESIGNER CO-PILOT — SYSTEM PROMPT
