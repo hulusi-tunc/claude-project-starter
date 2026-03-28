@@ -1,13 +1,13 @@
 # Claude Project Starter Pack
 
-A template repository with **65 skills**, **27 commands**, **8 agents**, and **2 MCP servers** pre-configured for Claude Code.
+A template repository with **123 skills**, **27 commands**, **8 agents**, and **2 MCP servers** pre-configured for Claude Code.
 
 ## What's Inside
 
 ```
 .claude/
   settings.json        # All plugins enabled
-  skills/              # 65 skills (bundled, works on any machine)
+  skills/              # 123 skills (bundled, works on any machine)
   commands/            # 27 slash commands
   agents/              # 8 designer agents (auto-activate)
 .mcp.json              # Puppeteer + Chrome DevTools MCP servers
@@ -56,27 +56,50 @@ Just talk naturally -- Claude picks the right agent automatically.
 | **design-ops-lead** | Handoffs, sprints, critiques, workflows | 7 |
 | **design-reviewer** | Heuristic evaluation, QA, accessibility review | 5 |
 
-## Skills (65)
+## Skills (123)
 
-### Designer Skills (63) — by [MC Dean](https://marieclairedean.substack.com/)
+### Designer Skills (65)
 
-| Plugin | Skills | Commands |
-|--------|--------|----------|
-| design-research | 10 | 4 |
-| design-systems | 8 | 3 |
-| ux-strategy | 8 | 3 |
-| ui-design | 9 | 4 |
-| interaction-design | 7 | 3 |
-| prototyping-testing | 8 | 4 |
-| design-ops | 7 | 3 |
-| designer-toolkit | 6 | 3 |
+| Plugin | Skills | Commands | Description |
+|--------|--------|----------|-------------|
+| design-research | 10 | 4 | Personas, empathy maps, journey maps, interviews |
+| design-systems | 8 | 3 | Tokens, components, accessibility, theming |
+| ux-strategy | 8 | 3 | Competitive analysis, principles, metrics |
+| ui-design | 9 | 4 | Colors, typography, grids, responsive, dark mode |
+| interaction-design | 7 | 3 | Animations, state machines, gestures, error handling |
+| prototyping-testing | 8 | 4 | Wireframes, heuristics, A/B testing, user flows |
+| design-ops | 7 | 3 | Handoffs, sprints, critiques, QA, workflows |
+| designer-toolkit | 6 | 3 | Rationale, presentations, case studies, UX writing |
+| frontend-design | 1 | — | Distinctive, production-grade UI code (Anthropic) |
+| shadcn-ui | 1 | — | Radix UI + Tailwind + React Hook Form + Zod |
 
-### Development Skills (2)
+### Inclusive Design Skills (58)
 
-| Skill | From | Description |
-|-------|------|-------------|
-| frontend-design | Anthropic (official) | Distinctive, production-grade UI code |
-| shadcn-ui | developer-kit | shadcn/ui + Radix UI + Tailwind + Zod patterns |
+| Plugin | Skills | Description |
+|--------|--------|-------------|
+| cognitive-accessibility | 11 | Cognitive load, plain language, wayfinding, memory, focus |
+| inclusive-interaction | 10 | Keyboard nav, gestures, voice, touch targets, motion sensitivity |
+| accessible-content | 10 | Alt text, headings, forms, links, tables, readable content |
+| inclusive-personas | 9 | Disability personas, assistive tech scenarios, ability spectrum |
+| adaptive-interfaces | 9 | Color independence, flexible typography, simplified views |
+| accessibility-decisions | 9 | Compliance mapping, debt tracking, tradeoff analysis, handoff |
+
+### How Skills Layer Together
+
+Designer skills build the system. Inclusive skills extend it for accessibility:
+
+| Design (build) | → | Inclusive (extend) |
+|---------------|---|-------------------|
+| gesture-patterns | → | gesture-alternatives |
+| color-system | → | colour-independence |
+| user-persona | → | disability-inclusive-personas |
+| animation-principles | → | motion-sensitivity |
+| component-spec | → | keyboard-navigation |
+| typography-scale | → | flexible-typography |
+| layout-grid | → | responsive-accessibility |
+| ux-writing | → | plain-language-design |
+| handoff-spec | → | accessibility handoff |
+| feedback-patterns | → | multi-sensory feedback |
 
 ## MCP Servers
 
@@ -128,5 +151,6 @@ git merge template/main
 
 ## Credits
 - Designer skills by [MC Dean](https://marieclairedean.substack.com/) via [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills)
+- Inclusive design skills by [MC Dean](https://marieclairedean.substack.com/) via [Owl-Listener/inclusive-design-skills](https://github.com/Owl-Listener/inclusive-design-skills)
 - Frontend design skill by [Anthropic](https://github.com/anthropics/claude-plugins-official)
 - shadcn-ui skill by [Giuseppe Trisciuoglio](https://github.com/giuseppe-trisciuoglio/developer-kit)
