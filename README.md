@@ -1,6 +1,14 @@
-<p align="center">
-  <img src="assets/unicorn-banner.svg" alt="Unicorn Skills — a Claude Code starter for design, accessibility, and engineering" width="100%">
-</p>
+```
+                  *
+                 /|\
+                / | \
+               / /|\ \
+              / / | \ \
+             / /  |  \ \
+            / /   |   \ \
+           /_/____|____\_\
+                 ~~~
+```
 
 <h1 align="center">Unicorn Skills</h1>
 
