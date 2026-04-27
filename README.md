@@ -1,15 +1,32 @@
-# Claude Project Starter Pack
+<p align="center">
+  <img src="assets/unicorn-banner.svg" alt="Unicorn Skills — a Claude Code starter for design, accessibility, and engineering" width="100%">
+</p>
 
-A template repository with **123 skills**, **27 commands**, **8 agents**, and **2 MCP servers** pre-configured for Claude Code.
+<h1 align="center">Unicorn Skills</h1>
+
+<p align="center">
+  <em>A Claude Code template that walks in with <strong>112 skills</strong>, <strong>27 commands</strong>, <strong>4 agents</strong>, and <strong>2 MCP servers</strong> already saddled up.</em>
+</p>
+
+<p align="center">
+  <a href="#quick-start"><img alt="Quick start" src="https://img.shields.io/badge/quick%20start-2%20minutes-FF6B9E?style=flat-square"></a>
+  <img alt="Skills" src="https://img.shields.io/badge/skills-112-7AB8FF?style=flat-square">
+  <img alt="Commands" src="https://img.shields.io/badge/commands-27-FFB347?style=flat-square">
+  <img alt="Agents" src="https://img.shields.io/badge/agents-4-C58BFF?style=flat-square">
+</p>
+
+---
+
+A template repository with **112 skills**, **27 commands**, **4 agents**, and **2 MCP servers** pre-configured for Claude Code.
 
 ## What's Inside
 
 ```
 .claude/
   settings.json        # All plugins enabled
-  skills/              # 123 skills (bundled, works on any machine)
+  skills/              # 112 skills (bundled, works on any machine)
   commands/            # 27 slash commands
-  agents/              # 8 designer agents (auto-activate)
+  agents/              # 4 designer agents (auto-activate)
 .mcp.json              # Puppeteer + Chrome DevTools MCP servers
 CLAUDE.md              # Project instructions for Claude
 setup.sh               # One-time machine setup (installs plugins)
@@ -25,7 +42,7 @@ setup.sh               # One-time machine setup (installs plugins)
 
 ### Option B: Clone directly
 ```bash
-git clone https://github.com/hulusi-tunc/claude-project-starter.git my-new-project
+git clone https://github.com/hulusi-tunc/unicorn-skills.git my-new-project
 cd my-new-project
 rm -rf .git && git init  # Fresh git history
 ```
@@ -48,15 +65,13 @@ Just talk naturally -- Claude picks the right agent automatically.
 | Agent | Role | Skills Loaded |
 |-------|------|--------------|
 | **designer-copilot** | Main design partner (5 modes: thinking, review, prototype, brainstorm, spec) | 22 |
-| **design-researcher** | User research, personas, interviews, journeys | 10 |
 | **ui-designer** | Colors, typography, grids, responsive, shadcn/ui | 11 |
-| **ux-strategist** | Competitive analysis, principles, metrics, vision | 8 |
 | **design-system-architect** | Components, tokens, theming, accessibility | 8 |
-| **interaction-designer** | Micro-interactions, states, animations, gestures | 7 |
-| **design-ops-lead** | Handoffs, sprints, critiques, workflows | 7 |
 | **design-reviewer** | Heuristic evaluation, QA, accessibility review | 5 |
 
-## Skills (123)
+> Specialist agents (design-researcher, ux-strategist, interaction-designer, design-ops-lead) live in `.claude/agents-archive/` — restore with `git mv` if you need deeper specialist routing.
+
+## Skills (112)
 
 ### Designer Skills (65)
 
@@ -114,7 +129,7 @@ Plus built-in: **WebSearch** and **WebFetch** (always available).
 
 Edit files locally and push:
 ```bash
-cd claude-project-starter
+cd unicorn-skills
 # Make changes (add skills, update agents, etc.)
 git add -A
 git commit -m "what you changed"
@@ -130,7 +145,7 @@ Projects created from the template are independent repos. They don't auto-update
 ### First time (one-time setup)
 ```bash
 cd my-existing-project
-git remote add template https://github.com/hulusi-tunc/claude-project-starter.git
+git remote add template https://github.com/hulusi-tunc/unicorn-skills.git
 git fetch template
 git merge template/main --allow-unrelated-histories
 ```
@@ -145,7 +160,7 @@ git merge template/main
 
 | Action | Command |
 |--------|---------|
-| **Update template** | Edit, commit, push from `claude-project-starter/` |
+| **Update template** | Edit, commit, push from `unicorn-skills/` |
 | **New project** | "Use this template" on GitHub (gets latest) |
 | **Update old project** | `git fetch template && git merge template/main` |
 
