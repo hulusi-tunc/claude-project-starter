@@ -17,7 +17,7 @@
 .-.-.-'   _o\ \\\     '::'   (o_ '-.-' |__\'-.-;~ ~ ~ ~ ~ ~~/   /\
           \ /  \\\__          )_\    .:::::::.-'\          '- - -|
      :::''':::::^)__\:::::::::::::::::'''''''-.  \                '- - -
-    :::::::  '''''''''''   ''''''''''''':::. -'\  \     C. SWANSIGER
+    :::::::  '''''''''''   ''''''''''''':::. -'\  \
 _____':::::_____________________________________\__\______________________
 ```
 
@@ -36,155 +36,116 @@ _____':::::_____________________________________\__\______________________
 
 ---
 
-A template repository with **112 skills**, **27 commands**, **4 agents**, and **2 MCP servers** pre-configured for Claude Code.
+A Claude Code starter pack for design agencies turning designers into design engineers. Clone, open, go.
 
-## What's Inside
+**113 skills · 27 commands · 5 agents · 2 MCP servers** — all bundled. No setup required.
 
-```
-.claude/
-  settings.json        # All plugins enabled
-  skills/              # 112 skills (bundled, works on any machine)
-  commands/            # 27 slash commands
-  agents/              # 4 designer agents (auto-activate)
-.mcp.json              # Puppeteer + Chrome DevTools MCP servers
-CLAUDE.md              # Project instructions for Claude
-setup.sh               # One-time machine setup (installs plugins)
-```
+## Start here
 
-## Quick Start
+You're a designer. You opened Claude Code. Now what?
 
-### Option A: Use as GitHub Template
-1. Click **"Use this template"** on GitHub
-2. Clone your new repo
-3. Start Claude Code in the project directory
-4. Everything works automatically
+Say **"hi"** to **🦄 Unicorn** — the studio lead.
 
-### Option B: Clone directly
+Unicorn reads your PRD, asks how you want to work (*instructor* mode = explains every step, *operator* mode = just runs the workflow), and walks you through the project. Brief → design system → UI → polish → handoff. The specialist agents step in when needed.
+
+You don't memorize 113 skill names. Unicorn knows them all.
+
+## Quick start
+
+**Use the template** (easiest)
+Click *Use this template* on GitHub → clone → open in Claude Code. Done.
+
+**Or clone directly**
 ```bash
-git clone https://github.com/hulusi-tunc/unicorn-skills.git my-new-project
-cd my-new-project
-rm -rf .git && git init  # Fresh git history
+git clone https://github.com/hulusi-tunc/unicorn-skills.git my-project
+cd my-project && rm -rf .git && git init
 ```
 
-### Optional: Install Marketplace Plugins
+**Optional: install marketplace plugins** (only for skill updates)
 ```bash
 ./setup.sh
 ```
-> Skills work without this step (they're bundled in `.claude/skills/`). The setup script adds marketplace plugin support for updates.
 
-### Chrome DevTools MCP (one-time per machine)
+**One-time per machine: Chrome DevTools MCP**
 ```bash
 npm install -g chrome-devtools-mcp
 ```
 
-## Agents (Auto-Activate)
+## What's inside
 
-Just talk naturally -- Claude picks the right agent automatically.
-
-| Agent | Role | Skills Loaded |
-|-------|------|--------------|
-| **designer-copilot** | Main design partner (5 modes: thinking, review, prototype, brainstorm, spec) | 22 |
-| **ui-designer** | Colors, typography, grids, responsive, shadcn/ui | 11 |
-| **design-system-architect** | Components, tokens, theming, accessibility | 8 |
-| **design-reviewer** | Heuristic evaluation, QA, accessibility review | 5 |
-
-> Specialist agents (design-researcher, ux-strategist, interaction-designer, design-ops-lead) live in `.claude/agents-archive/` — restore with `git mv` if you need deeper specialist routing.
-
-## Skills (112)
-
-### Designer Skills (65)
-
-| Plugin | Skills | Commands | Description |
-|--------|--------|----------|-------------|
-| design-research | 10 | 4 | Personas, empathy maps, journey maps, interviews |
-| design-systems | 8 | 3 | Tokens, components, accessibility, theming |
-| ux-strategy | 8 | 3 | Competitive analysis, principles, metrics |
-| ui-design | 9 | 4 | Colors, typography, grids, responsive, dark mode |
-| interaction-design | 7 | 3 | Animations, state machines, gestures, error handling |
-| prototyping-testing | 8 | 4 | Wireframes, heuristics, A/B testing, user flows |
-| design-ops | 7 | 3 | Handoffs, sprints, critiques, QA, workflows |
-| designer-toolkit | 6 | 3 | Rationale, presentations, case studies, UX writing |
-| frontend-design | 1 | — | Distinctive, production-grade UI code (Anthropic) |
-| shadcn-ui | 1 | — | Radix UI + Tailwind + React Hook Form + Zod |
-
-### Inclusive Design Skills (58)
-
-| Plugin | Skills | Description |
-|--------|--------|-------------|
-| cognitive-accessibility | 11 | Cognitive load, plain language, wayfinding, memory, focus |
-| inclusive-interaction | 10 | Keyboard nav, gestures, voice, touch targets, motion sensitivity |
-| accessible-content | 10 | Alt text, headings, forms, links, tables, readable content |
-| inclusive-personas | 9 | Disability personas, assistive tech scenarios, ability spectrum |
-| adaptive-interfaces | 9 | Color independence, flexible typography, simplified views |
-| accessibility-decisions | 9 | Compliance mapping, debt tracking, tradeoff analysis, handoff |
-
-### How Skills Layer Together
-
-Designer skills build the system. Inclusive skills extend it for accessibility:
-
-| Design (build) | → | Inclusive (extend) |
-|---------------|---|-------------------|
-| gesture-patterns | → | gesture-alternatives |
-| color-system | → | colour-independence |
-| user-persona | → | disability-inclusive-personas |
-| animation-principles | → | motion-sensitivity |
-| component-spec | → | keyboard-navigation |
-| typography-scale | → | flexible-typography |
-| layout-grid | → | responsive-accessibility |
-| ux-writing | → | plain-language-design |
-| handoff-spec | → | accessibility handoff |
-| feedback-patterns | → | multi-sensory feedback |
-
-## MCP Servers
-
-| Server | What it does |
-|--------|-------------|
-| **Puppeteer** | Navigate, click, type, screenshot, scrape any page |
-| **Chrome DevTools** | Inspect DOM, debug CSS, console, network, accessibility |
-
-Plus built-in: **WebSearch** and **WebFetch** (always available).
-
-## How to Update This Template
-
-Edit files locally and push:
-```bash
-cd unicorn-skills
-# Make changes (add skills, update agents, etc.)
-git add -A
-git commit -m "what you changed"
-git push
+```
+.claude/
+  agents/        5 agents — Unicorn leads, 4 specialists support
+  skills/        113 skills (bundled, no install needed)
+  commands/      27 slash commands
+  settings.json  Plugins enabled
+.mcp.json        Puppeteer + Chrome DevTools
+CLAUDE.md        Full inventory for Claude
+project/         Drop your PRD/WBS here (Unicorn reads them)
 ```
 
-Next time you click "Use this template", it creates from the latest version.
+## The 5 agents
 
-## How to Update Projects Created From This Template
+Talk naturally. The right one shows up.
 
-Projects created from the template are independent repos. They don't auto-update. To pull updates:
+| Agent | What it does |
+|---|---|
+| **🦄 unicorn** | Studio lead — talk to it first. Reads your brief, tracks stage, switches between *instructor* and *operator* mode |
+| **designer-copilot** | Senior design partner — thinking, reviews, prototype iteration |
+| **ui-designer** | Color, typography, grids, responsive, dark mode |
+| **design-system-architect** | Tokens, components, theming |
+| **design-reviewer** | Heuristic + accessibility checks |
 
-### First time (one-time setup)
+> Extra specialists (ux-strategist, design-researcher, interaction-designer, design-ops-lead) live in `.claude/agents-archive/` — restore with `git mv` if a project needs deeper routing.
+
+## The 113 skills, in 3 families
+
+- **Designer (72)** — research, strategy, UI, interaction, prototyping, ops, Figma, frontend, shadcn/ui
+- **Inclusive Design (37)** — cognitive a11y, keyboard nav, alt text, motion sensitivity, plain language
+- **Engineering Quality (4)** — `emil-design-eng` for animation taste + 3 Vercel skills (web design guidelines, React perf, React Native perf)
+
+Full inventory and per-cluster breakdown lives in [CLAUDE.md](CLAUDE.md).
+
+## How skills pair
+
+Designer skills build it. Inclusive skills make it work for everyone.
+
+| Build with… | …then check with |
+|---|---|
+| `color-system` | `colour-independence` |
+| `animation-principles` | `motion-sensitivity` |
+| `user-persona` | `disability-inclusive-personas` |
+| `component-spec` | `keyboard-navigation` |
+| `typography-scale` | `flexible-typography` |
+
+## MCP servers
+
+- **Puppeteer** — navigate, click, screenshot any page
+- **Chrome DevTools** — DOM, CSS, console, network, accessibility audits
+
+Plus built-in **WebSearch** and **WebFetch**.
+
+## Updating
+
+**Edit the template** (in this repo)
 ```bash
-cd my-existing-project
+git add -A && git commit -m "what you changed" && git push
+```
+
+**Pull updates into a project created from the template** — first time only:
+```bash
 git remote add template https://github.com/hulusi-tunc/unicorn-skills.git
 git fetch template
 git merge template/main --allow-unrelated-histories
 ```
 
-### After that
-```bash
-git fetch template
-git merge template/main
-```
-
-### Quick reference
-
-| Action | Command |
-|--------|---------|
-| **Update template** | Edit, commit, push from `unicorn-skills/` |
-| **New project** | "Use this template" on GitHub (gets latest) |
-| **Update old project** | `git fetch template && git merge template/main` |
+After that: `git fetch template && git merge template/main`
 
 ## Credits
-- Designer skills by [MC Dean](https://marieclairedean.substack.com/) via [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills)
-- Inclusive design skills by [MC Dean](https://marieclairedean.substack.com/) via [Owl-Listener/inclusive-design-skills](https://github.com/Owl-Listener/inclusive-design-skills)
-- Frontend design skill by [Anthropic](https://github.com/anthropics/claude-plugins-official)
-- shadcn-ui skill by [Giuseppe Trisciuoglio](https://github.com/giuseppe-trisciuoglio/developer-kit)
+
+- Designer skills — [MC Dean](https://marieclairedean.substack.com/) · [Owl-Listener/designer-skills](https://github.com/Owl-Listener/designer-skills)
+- Inclusive design skills — [MC Dean](https://marieclairedean.substack.com/) · [Owl-Listener/inclusive-design-skills](https://github.com/Owl-Listener/inclusive-design-skills)
+- `frontend-design` — [Anthropic](https://github.com/anthropics/claude-plugins-official)
+- `shadcn-ui` — [Giuseppe Trisciuoglio](https://github.com/giuseppe-trisciuoglio/developer-kit)
+- `emil-design-eng` — Emil Kowalski's animation philosophy
+- Vercel engineering skills — snapshotted from the Vercel team's upstream guidance
